@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FranCo Music Upload Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <img src="website/pexels-photo-1563356.jpg" alt="Background Image"
+</head>
+<body>
+    <header>
+        <h1>Free Music Upload</h1>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Song</h2>
+            <form id="uploadForm">
+                <input type="text" id="artistName" placeholder="Artist Name" required>
+                <input type="text" id="songTitle" placeholder="Song Title" required>
+                <input type="file" id="songFile" accept="audio/*" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="music-list">
+            <h2>Uploaded Songs</h2>
+            <ul id="musicList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
